@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="topNavResponsive_files/font-awesome.css">
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="./styles/estilo.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <title>Machine Learning</title>
+  <!--LINK JAVASCRIPTS-->
+  <script src="./javascripts/scripts.js"></script>
+  <!--SMOOTH SCROLL-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.867.0">
+  <div id="container">
+    <!--NAV SECTION-->
+    <div class="topnav" id="myTopnav">
+      <a href="#hero">Home</a>
+      <a href="#introduction">Models of AI</a>
+      <a href="#sec3">Types of ML</a>
+      <a href="#uses">Uses</a>
+      <a href="#credits">Credits</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+      </a>
+    </div>
+    <!--HERO SECTION-->
+    <section id="hero">
+      <a href="#introduction">
+        <h1>Machine Learning</h1>
+      </a>
+    </section>
+    <!--SECTION 2-->
+    <section id="introduction">
+      <h1>Models of AI</h1>
+      <img src="./images/owl-or-apple.png" alt="Images of an owl and an apple that are really similar">
+      <h2>What is an AI Model?</h2>
+      <p>AI or Artificial Intelligence is a subfield within computer science associated with constructing
+        machines that can simulate human intelligence.</p>
+      <p>An AI model is a program or algorithm that utilizes a set of data that enables it to recognize certain
+        patterns. This allows it to reach a conclusion or make a prediction when provided with sufficient information.
+      </p>
+      <p>This is especially useful for solving complex problems using huge amounts of data with high accuracy and
+        minimum costs.</p>
+      <p>Machine Learning is a subset within AI associated with providing machines the ability to learn from experience
+        without the need
+        to be programmed explicitly, so in a nutshell, ML or machine learning is a part of AI.
+      </p>
+      <p id="img-info">Upper Image: Barn owl or apple? Image recognition tasks can be equally challenging for AI models
+        and
+        humans. – Source @teenybiscuit</p>
+      <p></p>
+      <div style="clear:both;"></div>
+    </section>
+    <!--SECTION 3-->
+    <section id="sec3">
+      <h1>Types of ML</h1>
+      <div class="sec3-bottom">
+        <h2>Supervised <br>
+          Learning </h2>
+        <img src="./images/supervised.png" alt="Supervised Learning">
+        <p>
+          <a href="">Learn More</a>
+        </p>
+      </div>
+
+      <div class="sec3-bottom">
+        <h2>Unsupervised <br>
+          Learning</h2>
+        <img src="./images/unsupervised.png" alt="Unsupervised Learning">
+        <p>
+          <a href="">Learn More</a>
+        </p>
+      </div>
+
+      <div class="sec3-bottom" id="reinforced-learning">
+        <h2>Reinforced <br>
+          Learning</h2>
+        <img src="./images/reinforced.png" alt="Reinforced Learning">
+        <p>
+          <a href="">Learn More</a>
+        </p>
+      </div>
+
+      <div style="clear:both;"></div>
+    </section>
+    <!--FOOTER SECTION-->
+    <footer id="credits">
+      <p>Examen de HTML/CSS/JS - Curso 2021/22 <br>
+        Autor: David Antúnez Pérez <br>
+        IES Campanillas - Málaga</p>
+    </footer>
+  </div>
+</body>
+
+</html>
